@@ -9,6 +9,11 @@ dependencies = [
     "typer>=0.15.3",
 ]
 dynamic = ["version"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+]
 
 [build-system]
 requires = ["hatchling"]
