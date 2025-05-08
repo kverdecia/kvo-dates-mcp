@@ -111,7 +111,7 @@ wheels = [
 [[package]]
 name = "kvo-dates-mcp"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "mcp", extra = ["cli"] },
     { name = "python-dateutil" },
@@ -124,6 +124,9 @@ requires-dist = [
     { name = "python-dateutil", specifier = ">=2.9.0.post0" },
     { name = "typer", specifier = ">=0.15.3" },
 ]
+
+[package.metadata.dependency-groups]
+dev = [{ name = "kvo-dates-mcp", editable = "." }]
 
 [[package]]
 name = "markdown-it-py"

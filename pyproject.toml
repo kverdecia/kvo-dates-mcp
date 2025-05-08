@@ -25,3 +25,10 @@ packages = ["src/kvo"]
 [tool.hatch.version]
 path = "./src/kvo/datesmcp/__init__.py"
 
+[tool.uv.sources]
+kvo-dates-mcp = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "kvo-dates-mcp",
+]
