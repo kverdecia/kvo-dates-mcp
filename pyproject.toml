@@ -1,0 +1,22 @@
+[project]
+name = "kvo-dates-mcp"
+description = "MCP server with datetime tools"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]>=1.7.1",
+    "python-dateutil>=2.9.0.post0",
+    "typer>=0.15.3",
+]
+dynamic = ["version"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/kvo"]
+
+[tool.hatch.version]
+path = "./src/kvo/datesmcp/__init__.py"
+
