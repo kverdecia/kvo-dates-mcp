@@ -14,6 +14,6 @@ ADD --chown=app-user:app-user ./ /home/app-user/app/
 WORKDIR /home/app-user/app/
 RUN uv sync
 
-ENTRYPOINT ["uv", "run", "dates-mcp-server"]
+ENTRYPOINT ["uv", "run", "kvo-dates-mcp"]
 
 CMD ["--mcp-port", "8000", "--mcp-transport", "sse"]
