@@ -9,11 +9,26 @@ dependencies = [
     "typer>=0.15.3",
 ]
 dynamic = ["version"]
+authors = [
+    { name = "Karel Antonio Verdecia Ortiz", email = "kverdecia@magaya.com" }
+]
+maintainers = [
+    { name = "Karel Antonio Verdecia Ortiz", email = "kverdecia@magaya.com" }
+]
 classifiers = [
+    "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
     "Programming Language :: Python :: 3.13",
     "License :: OSI Approved :: MIT License",
 ]
+
+[project.urls]
+Homepage = "https://github.com/kverdecia/kvo-dates-mcp"
+Repository = "https://github.com/kverdecia/kvo-dates-mcp"
+Issues = "https://github.com/kverdecia/kvo-dates-mcp/issues"
+
+[project.scripts]
+kvo-dates-mcp = "kvo.datesmcp.cli:app"
 
 [build-system]
 requires = ["hatchling"]

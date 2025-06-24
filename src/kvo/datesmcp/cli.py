@@ -1,3 +1,6 @@
+import dotenv
+dotenv.load_dotenv(verbose=True, override=True)
+
 import typer
 from mcp.server.fastmcp import FastMCP
 
